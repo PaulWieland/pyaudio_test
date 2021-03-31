@@ -8,7 +8,7 @@ RUN apt-get update -yy && \
 	
 RUN pip3 install pyaudio && cp /usr/share/sounds/alsa/Front_Center.wav /Front_Center.wav
 
-COPY play.pi /play.pi
+COPY play.py /play.py
 #COPY requirements.txt /requirements.txt
 
 CMD ["/bin/sh"]
